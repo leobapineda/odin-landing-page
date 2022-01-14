@@ -4,7 +4,7 @@ body{
     height: 100vh;
     font-family: Roboto, sans-serif;
     padding: 5px;
-    margin: 10px 20%;
+    margin: 10px 30%;
     margin-bottom: 30px;    
 }
 
@@ -23,6 +23,11 @@ body{
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    margin-top: -10px;
 }
 
 ul{
@@ -30,52 +35,71 @@ ul{
     list-style: none;
     gap: 15px;
     margin: 0px;
+    flex-wrap: wrap;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
+.red-social li :hover{
+    color: #ffffff;
+    background-color: #646eff;
+}
 
-.header-text{
-    background-color: rgb(0, 47, 255);
-
-    width: 100%;
-    /* important */
+.header-text {
     display: flex;
-    /* important */
-    align-items: stretch;
-    justify-content: space-around;
-    box-sizing: border-box;
+    padding: 5% 5%;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.text{
-    background-color: red;
-    width: 100%;
-    /* important */
-    min-height: 100%;
-    background: white;
-    color: grey;
-    box-sizing: border-box;
+.h1{
+    margin-top: 0;
 }
 
+.text {
+    flex: 1;
+}
 
-
+.place-holder-text {
+    font-size: 10px;
+    margin-top: 0;
+    flex: 1;
+}
 
 .button_header{
-    background-color: red;
-    font-size: 15px;
-    color: white;
-    border-radius: 10px;
-
+    border-radius: 10%;
+    border: 0;
 }
+
+
+.button_header:hover{
+    background-color: #ff0000; 
+    color: white;
+    border-radius: 10%;
+    border: 0;
+}
+
+
+.place-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.place-holder-img {
+    max-width: 250px;
+    align-self: center;
+    border-radius: 2%;
+}
+
 
 /*first container*/
 /*second container*/
 
 .middle1-header{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     margin: 15px;
@@ -85,23 +109,35 @@ a{
 
 .middle1-text-image{
     display: flex;
-    align-items: center;
-    justify-content: space-between;   
-    margin: 24px 100px;
-    gap: 20px;   
+    justify-content: center;   
+    margin: 5% 5%;
+    gap: 10px;   
     font-size: 10px;
     text-align: center;
+    flex-wrap: wrap;
+    
 }
 
-.midle-square{
-    display:inline-block;
-    align-items: center;
+.midle-square {
+    display: flex;
+    flex-direction: column;
+    max-width: 140px;
 }
 
-.middle1-image{
+
+.middle1-image {
     width: 0;
+    min-height: 20px;
     min-width: 100%;
-    border-radius: 0 50% 50% 50%; 
+    border-radius: 5%; 
+}
+
+.thumbnail:hover {
+    color: rgb(87, 87, 87);
+} 
+
+.middle1-text {
+
 }
 
 /*second container*/
@@ -109,17 +145,25 @@ a{
 
 
 .middle2-text-container{
-    background-color: blue;   
     display: flex;
-    flex: 1;
-    align-items: center; 
-    justify-content: center;
+    background-color: blue;  
+    justify-content: center; 
+    
 }
 
-.middle2-text{
+.middle2-text {
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     width: 50%;
+    align-self: center;
+    gap: 10px;
+}
+
+.shane {
+    background-color: #646eff;
+    align-self: flex-end;
 }
 
 
@@ -129,7 +173,6 @@ a{
 .middle3-container{
     background-color: rgb(157, 255, 255);
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
 }
@@ -138,10 +181,9 @@ a{
 .middle3-square{
     display: flex;
     background-color: rgb(255, 160, 160);
-    width: 50%;
-    height: 50%;
     align-items: center;
-    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .middle3-square-text-h1{
@@ -153,6 +195,22 @@ a{
 
 }
 
+.second-channel {
+        border-radius: 10%;
+        border: 0;
+}
+    
+    
+.second-channel:hover {
+    background-color: #ff0000; 
+    color: white;
+    border-radius: 10%;
+    border: 0;
+}
+
+
+/* fourth container */
+/* footer */
 .footer{
     display: flex;
     background-color: rgb(238, 255, 0);
@@ -162,4 +220,9 @@ a{
     padding: 10px;
 }
 
-/* fourth container */
+.footer-text {
+    font-size:small;
+}
+
+
+/* footer */
